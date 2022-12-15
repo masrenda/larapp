@@ -10,7 +10,10 @@
                 </h1>
                 <h2 class="italic">author by: {{ $bloges->author }}</h2>
                 <h2 class="pb-4 text-blue-600 italic">Kategori: {{ $bloges->category->name }}</h2>
-                <p>{{ $bloges->excerpt }}</p>
+                <p class="pb-4">{{ $bloges->excerpt }}</p>
+                <button class="text-slate-200 border px-2 py-1 rounded-md border-slate-800 bg-slate-800">
+                    <a href="/posts/{{ $bloges->slug }}">read more</a>
+                </button>
             </div>
         </section>
     @endforeach

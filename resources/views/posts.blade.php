@@ -3,6 +3,9 @@
 @section('container')
     <section class="p-8 border mb-4 p-3"">
         <div>
+            <button class="text-slate-200 border mb-4 px-2 py-1 rounded-md border-slate-800 bg-slate-800">
+                <a href="/blog">back to blog</a>
+            </button>
             <h1 class="text-2xl font-bold ">
                 {{ $blogPost->title }}
             </h1>
