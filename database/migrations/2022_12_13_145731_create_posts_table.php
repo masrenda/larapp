@@ -16,9 +16,10 @@ return new class extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->foreignId('category_id');
+            $table->foreignId('user_id');
             $table->string('title');
-            $table->string('slug')->unique();
             $table->string('author');
+            $table->string('slug')->unique();
             $table->text('excerpt'); // excerpt = kutipan
             $table->text('body');
             $table->timestamp('publish_at')->nullable(); // Timestamp() adalah fungsi yang dapat digunakan dalam Laravel untuk menambahkan kolom timestamp otomatis ke tabel database. Kolom ini akan menyimpan tanggal dan waktu saat baris data tersebut dibuat atau diupdate. 
