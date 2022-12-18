@@ -16,14 +16,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// home route
 Route::get('/', function () {
     return view('home', [
         "title" => "Home"
     ]);
 });
 
-// about route
 Route::get('/about', function () {
     return view('about', [
         "title" => "About",
@@ -45,9 +43,9 @@ Route::get('categories/{category:slug}', function (Category $category) {
     ]);
 });
 
-Route::get('/categories', function () {
-    return view('categories', [
-        'title' => 'Post Categories',
-        'categories' => Category::all()
-    ]);
-});
+// Route::get('/categories', function () {
+//     return view('categories', [
+//         'title' => 'Post Categories',
+//         'categories' => Category::all()
+//     ]);
+// });
