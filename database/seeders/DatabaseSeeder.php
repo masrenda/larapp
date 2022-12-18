@@ -29,19 +29,19 @@ class DatabaseSeeder extends Seeder
         //     'password' => bcrypt('123456789')
         // ]);
 
-        User::factory(5)->create();
+        // User::factory(3)->create();
 
-        Category::create([
-            'name' => 'Programming',
-            'slug' => 'programming'
-        ]);
+        // Category::create([
+        //     'name' => 'Programming',
+        //     'slug' => 'programming'
+        // ]);
 
-        Category::create([
-            'name' => 'Social Library',
-            'slug' => 'social-library'
-        ]);
+        // Category::create([
+        //     'name' => 'Social Library',
+        //     'slug' => 'social-library'
+        // ]);
 
-        Post::factory(20)->create();
+        Post::factory(5)->create();
 
         // Post::create([
         //     'title' => 'Nuxt 3 yang membingungkan',

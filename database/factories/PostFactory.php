@@ -22,8 +22,8 @@ class PostFactory extends Factory
             'author' => $this->faker->name(),
             'excerpt' => $this->faker->paragraph(),
             'body' => $this->faker->paragraph(mt_rand(5, 10)),
-            'user_id' => 1,
-            'category_id' => 1,
+            'user_id' => mt_rand(1, 3),
+            'category_id' => mt_rand(1, 2),
         ];
     }
 }
