@@ -23,6 +23,12 @@ class DatabaseSeeder extends Seeder
             'password' => bcrypt('123456789')
         ]);
 
+        User::create([
+            'name' => 'Dwita Febriyanti',
+            'email' => 'dwifebiy@gmail.com',
+            'password' => bcrypt('123456789')
+        ]);
+
         Category::create([
             'name' => 'Programming',
             'slug' => 'programming'
@@ -60,7 +66,7 @@ class DatabaseSeeder extends Seeder
             'excerpt' => 'Blog kini memiliki berbagai fungsi. Tak hanya sebagai tempat menulis berbagai cerita sehari-hari atau uneg-uneg pribadi, blog bisa digunakan untuk kepentingan personal branding serta sarana pemasaran bisnis.',
             'body' => 'Sebelum mulai menulis blog, pertama-tama Toppers harus menentukan fokus blog terlebih dahulu. Fokus blog bisa bermacam-macam: Review buku, review film, review gadget, posting puisi karya sendiri, review drama series, cerita perjalanan, atau isu-isu sosial. Blog dengan fokus tertentu akan lebih mudah dikelola. Bila ingin blog jadi tempat menulis kegiatan sehari-hari juga tak masalah, namun biasanya blog jenis ini lebih sulit berkembang. Untuk keperluan artikel ini, mari kita gunakan blog buku sebagai contoh.',
             'category_id' => 2,
-            'user_id' => 1
+            'user_id' => 2
         ]);
 
         // \App\Models\User::factory(10)->create();
